@@ -1,0 +1,28 @@
+diff --git a/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js b/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js
+index 4e3e77c..294724e 100644
+--- a/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js
++++ b/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.dev.js
+@@ -177,7 +177,8 @@ function generateIdentifier(arg) {
+       debugFileName
+     });
+     if (devPrefix) {
+-      identifier = "".concat(devPrefix, "__").concat(identifier);
++      // identifier = "".concat(devPrefix, "__").concat(identifier);
++      identifier = devPrefix
+     }
+   }
+   return identifier.match(/^[0-9]/) ? "_".concat(identifier) : identifier;
+diff --git a/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.prod.js b/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.prod.js
+index 65ed8fd..cadb9e8 100644
+--- a/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.prod.js
++++ b/node_modules/@vanilla-extract/css/dist/vanilla-extract-css.cjs.prod.js
+@@ -177,7 +177,8 @@ function generateIdentifier(arg) {
+       debugFileName
+     });
+     if (devPrefix) {
+-      identifier = "".concat(devPrefix, "__").concat(identifier);
++      // identifier = "".concat(devPrefix, "__").concat(identifier);
++      identifier = devPrefix
+     }
+   }
+   return identifier.match(/^[0-9]/) ? "_".concat(identifier) : identifier;

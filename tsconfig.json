@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "outDir": "./lib-esm",
+    "strict": true,
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./@types"]
+  },
+  "include": ["@types/**/*.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.tsx"]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "vanilla-extract-primer-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib-esm/index.js",
+  "scripts": {
+    "dev": "npm run storybook",
+    "build": "rollup -c rollup.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "postinstall": "patch-package"
+  },
+  "keywords": [],
+  "author": "Siddharth Kshetrapal",
+  "license": "MIT",
+  "dependencies": {
+    "@primer/octicons-react": "^17.10.2",
+    "@primer/primitives": "^7.10.0",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@vanilla-extract/webpack-plugin": "^2.2.0",
+    "deepmerge-ts": "^4.2.2",
+    "mini-css-extract-plugin": "^2.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "@vanilla-extract/rollup-plugin": "^1.2.0",
+    "babel-loader": "^8.3.0",
+    "patch-package": "^6.5.1",
+    "storybook-addon-themes": "^6.1.0"
+  }
+}

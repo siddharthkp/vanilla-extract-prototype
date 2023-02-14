@@ -5,7 +5,7 @@
   "main": "lib-esm/index.js",
   "scripts": {
     "dev": "npm run storybook",
-    "build": "rollup -c rollup.config.js",
+    "build": "rm -rf lib-esm && rollup -c rollup.config.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "postinstall": "patch-package"

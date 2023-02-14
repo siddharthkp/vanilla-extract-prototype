@@ -1,14 +1,14 @@
 {
   "name": "@siddharthkp/vanilla-extract-prototype",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib-esm/index.js",
   "scripts": {
-    "dev": "npm run storybook",
-    "build": "rm -rf lib-esm && rollup -c rollup.config.js",
+    "dev": "npm run patch && npm run storybook",
+    "build": "rm -rf lib-esm && npm run patch && rollup -c rollup.config.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "patch-package"
+    "patch": "patch-package"
   },
   "keywords": [],
   "author": "Siddharth Kshetrapal",

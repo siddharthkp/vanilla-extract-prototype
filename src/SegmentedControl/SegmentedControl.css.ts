@@ -98,7 +98,7 @@ export const button = style({
   border: '1px solid',
   borderColor: 'transparent',
   borderRadius: primitives.radii[6],
-  color: 'currentColor',
+  color: primitives.colors.btn.text,
   cursor: 'pointer',
   fontFamily: 'inherit',
   fontSize: 'inherit',

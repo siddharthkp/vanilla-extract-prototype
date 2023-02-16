@@ -1,5 +1,5 @@
 import './../assets/src/theme.css.ts.vanilla-050d9c5d.css';
-import './../assets/src/SegmentedControl/SegmentedControl.css.ts.vanilla-a2f6bbe7.css';
+import './../assets/src/SegmentedControl/SegmentedControl.css.ts.vanilla-23177a5c.css';
 
 var button = 'SegmentedControl_button';
 var content = 'SegmentedControl_content';

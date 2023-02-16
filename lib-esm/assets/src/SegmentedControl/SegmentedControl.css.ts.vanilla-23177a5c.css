@@ -40,7 +40,7 @@
   border: 1px solid;
   border-color: transparent;
   border-radius: var(--radii-6);
-  color: currentColor;
+  color: var(--colors-btn-text);
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;

@@ -1,6 +1,6 @@
 {
   "name": "@siddharthkp/vanilla-extract-prototype",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "lib-esm/index.js",
   "scripts": {

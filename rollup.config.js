@@ -18,8 +18,7 @@ export default {
     typescript(),
     commonjs({ extensions }),
     resolve({ extensions }),
-    vanillaExtractPlugin({
-      extensions: 'debug'
-    })
-  ]
+    vanillaExtractPlugin({ extensions: 'debug' })
+  ],
+  external: ['react', 'react-dom']
 };

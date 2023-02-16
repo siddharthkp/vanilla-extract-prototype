@@ -1,17 +1,16 @@
-import '../node_modules/react/index.js';
+import * as React from 'react';
 import { base, variants, leadingIcon, trailingIcon, counter } from './Button.css.js';
-import { exports as reactExports } from '../_virtual/index.js';
 
 const ButtonComponent = ({ variant = 'default', size = 'medium', leadingIcon: LeadingIcon, trailingIcon: TrailingIcon, className, ...props }) => {
-    return (reactExports.createElement("button", { type: "button", className: [base, variants.appearance[variant], variants.size[size], className]
+    return (React.createElement("button", { type: "button", className: [base, variants.appearance[variant], variants.size[size], className]
             .filter(String)
             .join(' '), ...props },
-        reactExports.createElement("span", { className: leadingIcon }, LeadingIcon && reactExports.createElement(LeadingIcon, null)),
+        React.createElement("span", { className: leadingIcon }, LeadingIcon && React.createElement(LeadingIcon, null)),
         props.children,
-        reactExports.createElement("span", { className: trailingIcon }, TrailingIcon && reactExports.createElement(TrailingIcon, null))));
+        React.createElement("span", { className: trailingIcon }, TrailingIcon && React.createElement(TrailingIcon, null))));
 };
 const Counter = (props) => {
-    return reactExports.createElement("span", { className: counter, ...props });
+    return React.createElement("span", { className: counter, ...props });
 };
 const Button = Object.assign(ButtonComponent, { Counter });
 

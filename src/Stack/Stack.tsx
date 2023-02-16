@@ -32,7 +32,7 @@ export function Stack<T extends React.ElementType = 'button'>({
   return (
     <As
       className={[
-        inline ? classNames.inline : className.base,
+        inline ? classNames.inline : classNames.base,
         classNames.direction[direction],
         classNames.justify[justify],
         classNames.align[align],
